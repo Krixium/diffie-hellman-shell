@@ -7,3 +7,5 @@
     3. Both people send dhpub.pem to the other person.
     4. Both people run ./generate-dh-shared.sh [your own private key] dhpub.pem to generate secret.bin. dhpub.pem should be the one you received from the other person.
     5. Encrypt using ./encrtpy.sh [secret file] or decrypt using ./decrypt.sh [cyphertext].
+
+Note: All keys should be delete after a single use to have strong forward secrecy.
